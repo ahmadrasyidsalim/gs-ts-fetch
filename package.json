@@ -1,0 +1,19 @@
+{
+  "name": "gs-ts-fetch",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && tsc -p .",
+    "dev": "ts-node src/index.ts",
+    "start": "npm run build && node dist/index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.10",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
